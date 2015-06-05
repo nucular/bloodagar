@@ -1,0 +1,54 @@
+html, body {
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  background: #eee;
+
+  margin: 0;
+
+  height: 100%;
+}
+
+a {
+  cursor: pointer;
+  color: #0070bb;
+  text-decoration: none;
+}
+
+a[disabled] {
+  cursor: default;
+  pointer-events: none;
+  color: #555;
+}
+
+a:hover {
+  color: #035;
+}
+
+#canvas {
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+}
+
+#ui {
+  display: none;
+  max-width: 300px;
+  padding: 10px;
+
+  background-color: #fff;
+  
+  position: relative;
+  top: 50px;
+  margin-left: auto; margin-right: auto;
+  z-index: 1;
+
+  border-top: 2px solid #333;
+  border-bottom: 2px solid #333;
+}
+
+#regions {
+  width: 100%;
+  overflow: auto;
+}
