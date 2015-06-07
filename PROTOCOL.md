@@ -61,8 +61,8 @@ Send the following binary data using an `ArrayBuffer(5)` and a
 ```javascript
 var buffer = new ArrayBuffer(5);
 var view = new DataView(buffer);
-view.setUint8(0, 255);
-view.setUint32(1, 1, true);
+view.setUint8(0, 254);
+view.setUint32(1, 4, true); // protocol version 4?
 socket.send(buffer);
 ```
 
